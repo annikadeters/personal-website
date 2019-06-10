@@ -17,8 +17,8 @@
           class="col col-md-6 d-flex justify-content-md-end align-items-center"
         >
           <nav class="d-flex justify-content-md-end">
-            <a class="mr-3 text-dark h6" href="#">Kontakt</a>
-            <a class="text-dark h6" href="#">Biografie</a>
+            <a class="mr-3 text-dark h6" href="#contact">Kontakt</a>
+            <a class="text-dark h6" href="#biografie">Biografie</a>
           </nav>
         </div>
       </div>
@@ -29,18 +29,18 @@
         <div class="col-12 col-md-6 mb-3">
           <img
             src="https://2qnwk534wspy32octm1bhyvz-wpengine.netdna-ssl.com/wp-content/uploads/2014/05/artoftea-featured-big.jpg"
-            class="img-fluid"
+            class="img-fluid mb-3"
             alt="Bild Hund"
           />
-          <p class="text-left mt-3">
+          <p class="text-left">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Dignissimos minima quia repudiandae! Optio quibusdam blanditiis,
             odit architecto cum quo. Nisi quaerat beatae ipsum sequi delectus!
             Ipsam est labore non soluta?
           </p>
         </div>
-        <div class="col mb-3">
-          <h2 class="h5">Professional Skills</h2>
+        <div id="skills" class="col mb-3">
+          <h2 class="h5 mb-3">Professional Skills</h2>
           <button type="button" class="btn btn-dark mb-2">HTML</button>
           <button type="button" class="btn btn-dark mb-2">CSS</button>
           <button type="button" class="btn btn-dark mb-2">Javascript</button>
@@ -51,7 +51,7 @@
           <button type="button" class="btn btn-dark mb-2">CSS</button>
           <button type="button" class="btn btn-dark mb-2">Javascript</button>
 
-          <h2 class="h5">Personal Skills</h2>
+          <h2 class="h5 mt-3 mb-3">Personal Skills</h2>
           <button type="button" class="btn btn-dark mb-2">Yoga</button>
           <button type="button" class="btn btn-dark mb-2">Meditation</button>
           <button type="button" class="btn btn-dark mb-2">Tea</button>
@@ -63,13 +63,13 @@
       <div id="contact" class="card mb-3">
         <div class="container-fluid">
           <div class="row">
-            <div class="col mt-3">
+            <div class="col mt-3 mb-3">
               <h2>Contact</h2>
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="col-12 col-sm-6 mt-3">
+            <div class="col-12 col-sm-6 mb-3">
               <img
                 src="http://cdn.onlinewebfonts.com/svg/img_408528.png"
                 style="width: 20px"
@@ -77,7 +77,7 @@
               />
               <h6>0171 115 92 93</h6>
             </div>
-            <div class="col-12 col-sm-6 mt-3">
+            <div class="col-12 col-sm-6">
               <img
                 src="https://cdn3.iconfinder.com/data/icons/vector-icons-for-mobile-apps-2/512/Mail_black-512.png"
                 style="width: 20px"
@@ -88,7 +88,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div id="links" class="row mb-3">
         <div class="col-12 col-sm-4">
           <div class="card mb-2">
             <div class="text-center mt-2">
@@ -106,7 +106,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-4 mb-3">
+        <div class="col-12 col-sm-4">
           <div class="card mb-2">
             <div class="text-center mt-2">
               <img
@@ -140,25 +140,34 @@
         </div>
       </div>
 
-      <div class="row mt-3 mb-3">
+      <div class="row mb-3">
         <div class="col-12 col-md-6 mb-3">
           <h1>My Story</h1>
-          <p>
+          <p class="mt-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
             maiores rem nobis ipsa quasi molestias sed laborum et libero rerum
             non corporis perspiciatis facere, est pariatur ducimus repellat,
-            dignissimos minus.
+            dignissimos minus. <b>Lorem ipsum</b> dolor sit, amet consectetur
+            adipisicing elit. Voluptas maiores rem nobis ipsa quasi molestias
+            sed laborum et libero rerum non corporis perspiciatis facere, est
+            pariatur ducimus repellat, dignissimos minus.
           </p>
         </div>
-        <div class="col-12 col-md-6">
-          <table class="table">
+        <div class="col-12 col-md-6 mt-3">
+          <table id="biografie" class="table">
+            <!--
             <thead>
               <tr>
                 <th scope="col">year</th>
-                <th scope="col">stage</th>
+                <th scope="col"></th>
               </tr>
             </thead>
+            -->
             <tbody>
+              <tr>
+                <th scope="row">2019</th>
+                <td>Abitur</td>
+              </tr>
               <tr>
                 <th scope="row">2019</th>
                 <td>Abitur</td>
@@ -187,7 +196,9 @@
     <footer>
       <div class="row p-3 text-white bg-dark">
         <div class="col-4 text-center">
-          <h6>Kontakt</h6>
+          <a href="#skills">
+            <h6 class="text-light">Skills</h6>
+          </a>
         </div>
         <div class="col-4 text-center">
           <a href="#contact">
@@ -195,7 +206,7 @@
           </a>
         </div>
         <div class="col-4 text-center">
-          <h6>Kontakt</h6>
+          <a href="#links"><h6 class="text-light">Links</h6></a>
         </div>
       </div>
     </footer>
